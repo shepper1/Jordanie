@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du voyage - Jordanie</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    #map { height: 100vh; width: 100%; }
+    .info-window {
+      max-width: 250px;
+      font-family: Arial, sans-serif;
+    }
+    .info-window img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .info-window h3 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .info-window p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    .info-window .street-view-url {
+      display: block;
+      margin-top: 8px;
+      font-size: 11px;
+      color: #666;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  
+  <script>
+    function initMap() {
+      const center = { lat: 31.01512719766533, lng: 35.64292278389235 };
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+      });
+      
+      const markers = [{"lat":31.9543786,"lng":35.9105776,"name":"Amman","jour":1,"titre":"Arrivée à Amman, la ville blanche","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=31.9543786,35.9105776&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour1.jpg"},{"lat":31.9543786,"lng":35.9105776,"name":"Jerash / Amman","jour":2,"titre":"Voyage dans la Rome antique","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=31.9543786,35.9105776&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour2.jpg"},{"lat":30.3216354,"lng":35.4801251,"name":"Route des Rois / Petra","jour":3,"titre":"La Route des Rois","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=30.3216354,35.4801251&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour3.jpg"},{"lat":30.3216354,"lng":35.4801251,"name":"Petra","jour":4,"titre":"Merveille du Monde : Petra","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=30.3216354,35.4801251&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour4.jpg"},{"lat":29.5742989,"lng":35.4210371,"name":"Wadi Rum","jour":6,"titre":"Immersion dans le Wadi Rum","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=29.5742989,35.4210371&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour6.jpg"},{"lat":31.5590287,"lng":35.4731895,"name":"Mer Morte","jour":7,"titre":"Flottaison à la Mer Morte","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=31.5590287,35.4731895&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour7.jpg"},{"lat":31.4205347836573,"lng":35.82482748724647,"name":"Wadi Mujib / Mer Morte","jour":8,"titre":"Canyons du Wadi Mujib","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=31.4205347836573,35.82482748724647&key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q","aiImageUrl":"jour8.jpg"}];
+      
+      markers.forEach((markerData) => {
+        const marker = new google.maps.Marker({
+          position: { lat: markerData.lat, lng: markerData.lng },
+          map: map,
+          title: markerData.name,
+          label: String(markerData.jour)
+        });
+        
+        const contentString = `
+          <div class="info-window">
+            <img src="${markerData.streetViewUrl}" alt="Street View de ${markerData.name}" />
+            <h3>Jour ${markerData.jour}</h3>
+            <p><strong>${markerData.name}</strong></p>
+            <p>${markerData.titre}</p>
+            <span class="street-view-url">${markerData.streetViewUrl}</span>
+          </div>
+        `;
+        
+        const infoWindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        marker.addListener('click', () => {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q&callback=initMap">
+  </script>
+</body>
+</html>
