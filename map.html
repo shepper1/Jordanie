@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du voyage - Amman</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    #map { height: 100vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  
+  <script>
+    function initMap() {
+      const center = { lat: 31.118312257142854, lng: 35.69894418571429 };
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+      });
+      
+      const markers = [{"lat":31.9543786,"lng":35.9105776,"name":"Amman","jour":1},{"lat":32.2746515,"lng":35.8960765,"name":"Jerash","jour":3},{"lat":30.585164,"lng":36.238414,"name":"Route des Rois","jour":4},{"lat":30.3216354,"lng":35.4801251,"name":"Pétra","jour":5},{"lat":29.5742989,"lng":35.4210371,"name":"Wadi Rum","jour":7},{"lat":31.5590287,"lng":35.4731895,"name":"Mer Morte","jour":8},{"lat":31.5590287,"lng":35.4731895,"name":"Mer Morte / Amman","jour":9}];
+      
+      markers.forEach((markerData) => {
+        const marker = new google.maps.Marker({
+          position: { lat: markerData.lat, lng: markerData.lng },
+          map: map,
+          title: markerData.name,
+          label: String(markerData.jour)
+        });
+        
+        const infoWindow = new google.maps.InfoWindow({
+          content: '<div><strong>Jour ' + markerData.jour + '</strong><br>' + markerData.name + '</div>'
+        });
+        
+        marker.addListener('click', () => {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXsVY9wZUc8Q9VnK5oYDc8bBNvzvfDH4Q&callback=initMap">
+  </script>
+</body>
+</html>
