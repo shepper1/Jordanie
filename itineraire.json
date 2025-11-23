@@ -1,0 +1,273 @@
+{
+  "pays": "Jordanie",
+  "drapeau": "🇯🇴",
+  "symbole": "🐫",
+  "titre": "Aventure au Royaume des Nabatéens",
+  "budget": "1800€",
+  "duree": "10 jours",
+  "temps_vol": "environ 5 heures",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Amman, la ville blanche",
+      "legende": "Installation en douceur et première immersion dans la capitale jordanienne avec une balade sur la colline de la Citadelle au coucher du soleil.",
+      "lieu": "Amman",
+      "activites": [
+        "🛬 Arrivée à l'aéroport Queen Alia",
+        "🚗 Transfert et installation à l'hôtel",
+        "🌇 Promenade à la Citadelle d'Amman"
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Jordan Pass",
+          "texte": "Achetez le Jordan Pass en ligne avant votre départ. Il inclut le visa et l'accès à de nombreux sites, dont Petra."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Voyage dans la Rome antique",
+      "legende": "Journée dédiée à la découverte des ruines romaines de Jerash, l'une des cités de la Décapole les mieux conservées, avant de rentrer sur Amman.",
+      "lieu": "Jerash / Amman",
+      "activites": [
+        "🏛️ Exploration de la cité antique de Jerash",
+        "🎭 Visite du théâtre romain et des souks d'Amman en soirée"
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Bonnes chaussures",
+          "texte": "Le site de Jerash est vaste, prévoyez des chaussures de marche confortables."
+        },
+        {
+          "symbole": "🕑",
+          "titre": "Temps de visite",
+          "texte": "Comptez au minimum 3 à 4 heures pour bien profiter du site de Jerash."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🛣️",
+      "titre": "La Route des Rois",
+      "legende": "Traversez des paysages bibliques sur la mythique Route des Rois, en vous arrêtant pour admirer les mosaïques de Madaba et la vue depuis le Mont Nébo.",
+      "lieu": "Route des Rois / Petra",
+      "activites": [
+        "🗺️ Visite des mosaïques de Madaba",
+        "🌄 Panorama depuis le Mont Nébo",
+        "🚗 Route vers Wadi Musa (Pétra)"
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Location de voiture",
+          "texte": "Louer une voiture est le moyen le plus flexible pour parcourir la Route des Rois à votre rythme."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏺",
+      "titre": "Merveille du Monde : Petra",
+      "legende": "Journée entière consacrée à la découverte de Petra. La descente du Siq, l'apparition du Trésor et l'exploration des tombeaux royaux.",
+      "lieu": "Petra",
+      "activites": [
+        "🚶‍♂️ Traversée du Siq et découverte du Trésor (Al-Khazneh)",
+        "🏛️ Exploration du site principal (théâtre, tombeaux royaux)"
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Petra by Night",
+          "texte": "Certains soirs, le site est éclairé par des milliers de bougies. Une expérience magique à ne pas manquer."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Le site est immense et exposé au soleil. Emportez beaucoup d'eau."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🧗",
+      "titre": "Petra, l'ascension",
+      "legende": "Prenez de la hauteur en grimpant jusqu'au Monastère (Ad-Deir) pour une vue imprenable, ou explorez le Haut Lieu du Sacrifice pour une autre perspective de la cité.",
+      "lieu": "Petra",
+      "activites": [
+        "🧗 Randonnée jusqu'au Monastère (Ad-Deir)",
+        "🌄 Vue panoramique sur le site et la vallée de l'Araba"
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Tôt le matin",
+          "texte": "Commencez votre journée tôt pour éviter la chaleur et la foule, surtout pour la montée au Monastère."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🏜️",
+      "titre": "Immersion dans le Wadi Rum",
+      "legende": "Direction le sud vers les paysages martiens du Wadi Rum. Une excursion en 4x4 avec les Bédouins vous mènera à travers canyons et dunes de sable rouge.",
+      "lieu": "Wadi Rum",
+      "activites": [
+        "🚗 Route vers le Wadi Rum",
+        "🚙 Excursion en 4x4 dans le désert",
+        "⛺ Nuit dans un camp bédouin"
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "⭐",
+          "titre": "Nuit étoilée",
+          "texte": "Loin de toute pollution lumineuse, le ciel du Wadi Rum est un spectacle inoubliable."
+        },
+        {
+          "symbole": "🧣",
+          "titre": "Tenue",
+          "texte": "Pensez à un foulard et des lunettes de soleil pour vous protéger du sable et du soleil."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🧂",
+      "titre": "Flottaison à la Mer Morte",
+      "legende": "Remontez vers le point le plus bas de la Terre pour une expérience unique : flotter sans effort dans les eaux sur-salées de la Mer Morte et essayer les bains de boue.",
+      "lieu": "Mer Morte",
+      "activites": [
+        "🚗 Long trajet du Wadi Rum vers la Mer Morte",
+        "💧 Expérience de flottaison et bain de boue"
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "👁️",
+          "titre": "Attention",
+          "texte": "Évitez tout contact de l'eau avec les yeux, c'est extrêmement douloureux. Ne vous rasez pas juste avant."
+        },
+        {
+          "symbole": "🚿",
+          "titre": "Rinçage obligatoire",
+          "texte": "Rincez-vous abondamment à l'eau douce après le bain pour enlever tout le sel de votre peau."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏞️",
+      "titre": "Canyons du Wadi Mujib",
+      "legende": "Pour les plus aventuriers, une randonnée aquatique dans les gorges spectaculaires du Wadi Mujib, le 'Grand Canyon' de Jordanie.",
+      "lieu": "Wadi Mujib / Mer Morte",
+      "activites": [
+        "🏞️ Randonnée aquatique dans le canyon du Wadi Mujib (saisonnier)",
+        "🧖 Détente à l'hôtel au bord de la Mer Morte"
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Saisonnalité",
+          "texte": "Le Wadi Mujib est généralement ouvert d'avril à octobre. Vérifiez les conditions avant de vous y rendre."
+        },
+        {
+          "symbole": "🎒",
+          "titre": "Équipement",
+          "texte": "Prévoyez des chaussures allant dans l'eau et un sac étanche pour vos affaires."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🏙️",
+      "titre": "Retour à la capitale",
+      "legende": "Route retour vers Amman pour une dernière soirée. Explorez le quartier animé de Rainbow Street pour dîner et acheter vos derniers souvenirs.",
+      "lieu": "Amman",
+      "activites": [
+        "🚗 Route vers Amman",
+        "🛍️ Shopping et dîner sur Rainbow Street"
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Pensez aux épices, aux céramiques, aux produits de la Mer Morte ou à un keffieh traditionnel."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛫",
+      "titre": "Fin du voyage",
+      "legende": "Selon l'horaire de votre vol, profitez d'une dernière matinée pour un petit-déjeuner local avant de vous diriger vers l'aéroport.",
+      "lieu": "Amman",
+      "activites": [
+        "☕ Dernier petit-déjeuner jordanien",
+        "🛫 Transfert vers l'aéroport et vol retour"
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Aéroport",
+          "texte": "Prévoyez d'arriver à l'aéroport Queen Alia au moins 3 heures avant votre vol international."
+        }
+      ]
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont le printemps (mars à mai) et l'automne (septembre à novembre).",
+      "symbole": "🌸"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Au printemps/automne, les températures sont douces. Prévoir des vêtements légers et une veste pour les soirées fraîches, surtout dans le désert.",
+      "symbole": "🌡️"
+    },
+    {
+      "titre": "La monnaie est le Dinar Jordanien (JOD). Prévoir du liquide pour les souks et petits commerces.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Permis français souvent accepté pour la location de voiture mais un permis international est recommandé. Conduite à droite.",
+      "symbole": "🚗"
+    },
+    {
+      "titre": "Achetez une carte SIM locale (Zain, Orange) à l'aéroport pour un accès facile à internet.",
+      "symbole": "📶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Site officiel du tourisme jordanien",
+      "titre": "Visit Jordan",
+      "url": "https://www.visitjordan.com/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Achat du pass (visa + sites)",
+      "titre": "Jordan Pass",
+      "url": "https://www.jordanpass.jo/",
+      "symbole": "🎫"
+    },
+    {
+      "legende": "Conseils aux voyageurs",
+      "titre": "France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/",
+      "symbole": "🌍"
+    }
+  ]
+}
