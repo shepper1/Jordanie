@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épopée Nabatéenne : Des Sables du Wadi Rum aux Merveilles de Pétra Jordanie </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        template: {
+                            sable: '#F3E5AB',
+                            ocre: '#C66B3D',
+                            roche: '#2D2A26',
+                            ciel: '#4A6C6F',
+                            bg: '#FAFAF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #C66B3D;
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">Épopée Nabatéenne : Des Sables du Wadi Rum aux Merveilles de Pétra</a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Amman, la Cité Blanche</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Voyage dans le temps, d'Amman à Jerash</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Sur la Route des Rois vers la Mer Morte</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Canyons de Dana et route vers Pétra</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Merveille du Monde : Le Trésor de Pétra</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Pétra : L'ascension vers le Monastère</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Immersion dans le désert du Wadi Rum</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Du désert à la Mer Rouge</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Remontée vers la capitale</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Fin de l'aventure jordanienne</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-12 md:pt-0">
+        
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <video autoplay muted loop playsinline 
+               poster="https://images.unsplash.com/photo-1579606946838-6db34433f3c0?q=80&w=2070"
+               class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://videos.pexels.com/video-files/4456988/4456988-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.3em] mb-4 uppercase text-sm font-semibold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">
+                Jordanie <br> <span class="italic text-template-sable">Épopée Nabatéenne : Des Sables du Wadi Rum aux Merveilles de Pétra</span>
+            </h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">Épopée Nabatéenne : Des Sables du Wadi Rum aux Merveilles de Pétra</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🗓️ 10 jours</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">💰 2200€ / pers</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🛬 4h30 depuis Paris</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-20 relative">
+        
+        <div class="text-center mb-16">
+            <span class="text-template-ocre font-bold tracking-widest text-xs uppercase">Le Roadtrip</span>
+            <h2 class="font-serif text-4xl mt-2 text-template-roche">Votre Programme</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+            <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 1</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Amman, la Cité Blanche</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Atterrissage en douceur et première immersion dans l'ambiance de la capitale jordanienne après avoir récupéré votre véhicule.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🛬 Arrivée à l'aéroport Queen Alia</li>
+                        
+                            <li>🚗 Prise en charge de la voiture de location</li>
+                        
+                            <li>🛏️ Installation à l'hôtel et première balade</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🎟️ Jordan Pass</p>
+                            <p class="text-gray-700">Achetez-le en ligne avant de partir. Il inclut le visa et l'accès à plus de 40 sites, dont Pétra. Un gain de temps et d'argent considérable.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage dans le temps, d'Amman à Jerash</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez les vestiges de la capitale, de la citadelle au théâtre romain, avant de vous émerveiller devant l'une des cités romaines les mieux préservées du Proche-Orient.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🏛️ Visite de la Citadelle d'Amman</li>
+                        
+                            <li>🎭 Exploration du Théâtre Romain</li>
+                        
+                            <li>🚗 Route vers Jerash et visite du site antique</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">💡 Astuce pour Jerash</p>
+                            <p class="text-gray-700">Prévoyez au moins 3 heures pour explorer l'immense site de Jerash. Les meilleures photos se font en fin de journée avec la lumière dorée.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Sur la Route des Rois vers la Mer Morte</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Un périple sur une route biblique parsemée de mosaïques à Madaba et de panoramas depuis le Mont Nébo, avant une expérience de flottaison inoubliable.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>⛪ Découverte des mosaïques de Madaba</li>
+                        
+                            <li>⛰️ Contemplation du panorama depuis le Mont Nébo</li>
+                        
+                            <li>🌊 Flottaison et bain de boue dans la Mer Morte</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🧂 Conseil Mer Morte</p>
+                            <p class="text-gray-700">Évitez de vous raser le jour même et protégez vos yeux. La sensation de brûlure due au sel est intense. Rincez-vous abondamment à l'eau douce après le bain.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Canyons de Dana et route vers Pétra</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Randonnée au cœur des paysages spectaculaires de la plus grande réserve naturelle de Jordanie avant de rejoindre les portes de la mythique cité de Pétra.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🚶‍♂️ Randonnée dans la Réserve de biosphère de Dana</li>
+                        
+                            <li>🚗 Poursuite de la route vers Wadi Musa</li>
+                        
+                            <li>🌌 Soirée et préparation pour la visite de Pétra</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">👟 Équipement</p>
+                            <p class="text-gray-700">De bonnes chaussures de marche sont indispensables pour la randonnée à Dana et les longues journées de marche qui vous attendent à Pétra.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Merveille du Monde : Le Trésor de Pétra</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Journée entière consacrée à la découverte de la cité rose, en commençant par la traversée magique du Siq jusqu'à l'apparition spectaculaire du Trésor (Al-Khazneh).</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🚶‍♂️ Traversée du Siq</li>
+                        
+                            <li>🏛️ Découverte du Trésor (Al-Khazneh)</li>
+                        
+                            <li>🏺 Exploration de la rue à colonnades et des Tombeaux Royaux</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">⏰ Le bon timing</p>
+                            <p class="text-gray-700">Arrivez à l'ouverture du site (6h du matin) pour découvrir le Siq et le Trésor sans la foule et profiter d'une lumière exceptionnelle.</p>
+                        </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                            <p class="text-gray-700">Emportez au minimum 1,5L d'eau par personne, un chapeau et de la crème solaire. Le site est immense et très exposé au soleil.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 6</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pétra : L'ascension vers le Monastère</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une seconde journée à Pétra pour gravir les 800 marches menant au majestueux Monastère (Ad-Deir) et profiter de vues imprenables sur les montagnes environnantes.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🧗 Ascension des 800 marches vers le Monastère (Ad-Deir)</li>
+                        
+                            <li>📸 Admirer les points de vue sur la vallée d'Arava</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">💡 Petra by Night</p>
+                            <p class="text-gray-700">Renseignez-vous sur les jours de spectacle 'Petra by Night' (lundi, mercredi, jeudi). Une expérience magique du Trésor éclairé par des centaines de bougies.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 7</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion dans le désert du Wadi Rum</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez Pétra pour les paysages martiens du Wadi Rum. Explorez le désert en 4x4 avec un guide bédouin avant une nuit inoubliable sous les étoiles.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🚗 Route vers le désert du Wadi Rum</li>
+                        
+                            <li>🚙 Excursion de plusieurs heures en 4x4</li>
+                        
+                            <li>🏕️ Dîner traditionnel et nuit dans un camp bédouin</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🚙 Logistique</p>
+                            <p class="text-gray-700">Laissez votre voiture de location au parking du village de Wadi Rum. Votre guide viendra vous chercher pour débuter l'excursion.</p>
+                        </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🧥 Nuits fraîches</p>
+                            <p class="text-gray-700">Même en saison chaude, les nuits dans le désert peuvent être fraîches. Prévoyez une polaire ou une veste chaude.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 8</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Du désert à la Mer Rouge</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un dernier lever de soleil sur le désert, direction la station balnéaire d'Aqaba pour une après-midi de détente et de découverte des fonds marins.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🌅 Lever de soleil et petit-déjeuner dans le désert</li>
+                        
+                            <li>🚗 Route vers Aqaba</li>
+                        
+                            <li>🏊‍♂️ Snorkeling ou farniente sur les plages de la Mer Rouge</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🐠 Meilleurs spots</p>
+                            <p class="text-gray-700">Les plus beaux récifs coralliens se trouvent au sud d'Aqaba (South Beach), accessibles depuis des plages publiques ou des beach clubs.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 9</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Remontée vers la capitale</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une dernière matinée au bord de la Mer Rouge avant d'emprunter la 'Desert Highway' pour un retour rapide vers Amman et une dernière soirée jordanienne.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>☀️ Matinée libre à Aqaba</li>
+                        
+                            <li>🚗 Long trajet de retour vers Amman (4h)</li>
+                        
+                            <li>🍽️ Dîner d'adieu dans la capitale</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">🛣️ Deux routes</p>
+                            <p class="text-gray-700">Pour le retour, la 'Desert Highway' est plus rapide et directe que la panoramique Route des Rois, que vous avez déjà empruntée à l'aller.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+            <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 10</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Fin de l'aventure jordanienne</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Selon l'horaire de votre vol, profitez d'un dernier petit-déjeuner local avant de vous rendre à l'aéroport pour le vol retour vers Paris.</p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        
+                            <li>🛍️ Derniers achats de souvenirs</li>
+                        
+                            <li>🚗 Restitution du véhicule à l'aéroport</li>
+                        
+                            <li>🛫 Vol retour vers Paris</li>
+                        
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                    </div>
+                    
+                        <div class="tip-card p-4 rounded-r-lg text-sm">
+                            <p class="font-bold text-template-ocre mb-1">✈️ Aéroport</p>
+                            <p class="text-gray-700">Prévoyez d'arriver à l'aéroport Queen Alia au moins 3 heures avant le départ de votre vol international.</p>
+                        </div>
+                    
+                </div>
+            </div>
+            
+
+            <!--<div id="jour-2" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-12 md:text-left">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Amman, la ville blanche 🏛️</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        Plongez dans l'histoire millénaire d'Amman.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>🏺 Citadelle d'Amman (Jabal al-Qal'a)</li>
+                        <li>🎭 Théâtre Romain</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-0 md:pr-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2 Amman">
+                    </div>
+                     <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">👟 Conseil</p>
+                        <p class="text-gray-700">Chaussures confortables requises pour la Citadelle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage dans le temps à Jerash 🏺</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        L'une des cités romaines les mieux conservées du Proche-Orient.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        <li>🏛️ Site archéologique de Jerash</li>
+                        <li>🏰 Château d'Ajloun (optionnel)</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3 Jerash">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">🚗 Transport</p>
+                        <p class="text-gray-700">Location de voiture idéale pour cette journée.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-12 md:text-left">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Flottaison sur la Mer Morte 🌊</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                         Le point le plus bas de la Terre.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>🗺️ Mont Nébo sur la route</li>
+                        <li>💧 Flottaison et bain de boue</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-0 md:pr-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4 Mer Morte">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm bg-blue-50 border-blue-500" style="border-left-color: #4A6C6F;">
+                        <p class="font-bold text-template-ciel mb-1">⚠️ Précautions</p>
+                        <p class="text-gray-700">Attention aux yeux (sel) !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Route des Rois vers Petra 🛣️</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        Un itinéraire panoramique traversant des paysages spectaculaires.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        <li>🏰 Forteresse de Kerak</li>
+                        <li>🚗 Arrivée à Wadi Musa (Petra)</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5 Route des Rois">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">📸 Photo</p>
+                        <p class="text-gray-700">Arrêt indispensable au Wadi Mujib.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-12 md:text-left">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 6</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Merveille de Petra ✨</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        L'une des sept nouvelles merveilles du monde.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>🚶‍♂️ Le Siq & Le Trésor (Al-Khazneh)</li>
+                        <li>🧗 Randonnée au Monastère (Ad-Deir)</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-0 md:pr-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6 Petra">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">👟 Sportif</p>
+                        <p class="text-gray-700">Prévoyez 15-20km de marche. Partez tôt !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 7</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion dans le Wadi Rum 🏜️</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        Seul sur Mars. Décors hollywoodiens et sable rouge.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        <li>🚗 Route vers le désert (2h)</li>
+                        <li>🚙 Excursion 4x4 au coucher du soleil</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7 Wadi Rum">
+                    </div>
+                     <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">🏕️ Nuit Bédouine</p>
+                        <p class="text-gray-700">Expérience authentique sous les étoiles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-12 md:text-left">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 8</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Détente à Aqaba 🐠</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        Farniente au bord de la Mer Rouge et découverte des fonds marins.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>🌅 Lever de soleil Wadi Rum & route (1h)</li>
+                        <li>🏊‍♂️ Snorkeling sur South Beach</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-0 md:pr-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8 Aqaba">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm bg-blue-50 border-blue-500" style="border-left-color: #4A6C6F;">
+                        <p class="font-bold text-template-ciel mb-1">🌊 Aquarium naturel</p>
+                        <p class="text-gray-700">Coraux accessibles directement depuis la plage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-0 md:pr-12 md:text-right">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 9</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Retour à la capitale 🛣️</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        Derniers moments au soleil avant de remonter vers le Nord.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 inline-block text-left md:text-right">
+                        <li>🛍️ Matinée libre Aqaba</li>
+                        <li>🚗 Desert Highway vers Amman (4h)</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9 Retour">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">🚗 Desert Highway</p>
+                        <p class="text-gray-700">Route rapide, moins jolie que l'aller, mais efficace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jour-10" class="section-etape relative z-10 mb-10 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-400 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                <div class="md:w-[45%] pl-14 md:pl-12 md:text-left">
+                    <span class="font-serif text-3xl block text-template-roche mb-2">Jour 10</span>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Jordanie 🛫</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed italic mb-4">
+                        C'est la fin du voyage. Ma'a salama !
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>☕ Dernier petit-déjeuner</li>
+                        <li>🛫 Transfert aéroport et vol retour</li>
+                    </ul>
+                </div>
+                <div class="pl-14 md:pl-0 md:pr-12 md:w-[45%] mt-6 md:mt-0">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                        <img src="https://raw.githubusercontent.com/shepper1/Jordanie/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10 Départ">
+                    </div>
+                    <div class="tip-card p-4 rounded-r-lg text-sm">
+                        <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                        <p class="text-gray-700">Dattes, épices ou Keffieh.</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <footer id="pratique" class="bg-white border-t border-gray-200 pt-16 pb-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed">Les périodes idéales pour ce séjour sont le printemps (mars à mai) et l'automne (septembre à novembre).</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>🧳</span> À savoir
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-3">
+                    
+                        <li>💰 <strong>☀️ :</strong> Au printemps/automne, les températures sont douces (15-28°C). Prévoir vêtements légers et un lainage pour les soirées.</li>
+                    
+                        <li>💰 <strong>💳 :</strong> Monnaie : Dinar jordanien (JOD). Prévoir du liquide pour les petits commerces et les pourboires.</li>
+                    
+                        <li>💰 <strong>🚗 :</strong> Permis de conduire français suffisant. Conduite à droite. La 'Desert Highway' est en bon état, la Route des Rois plus sinueuse.</li>
+                    
+                        <li>💰 <strong>📶 :</strong> Acheter une carte SIM locale (Zain, Orange) à l'aéroport est simple et économique pour rester connecté.</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2"><span>🔗</span> Liens Utiles</h4>
+                <ul class="text-sm space-y-3">
+                    
+                        <li><a href="https://www.visitjordan.com/" target="_blank" class="hover:underline flex items-center gap-2"><strong>📘 Visit Jordan</strong></a></li>
+                    
+                        <li><a href="https://www.jordanpass.jo/" target="_blank" class="hover:underline flex items-center gap-2"><strong>🎟️ Jordan Pass</strong></a></li>
+                    
+                        <li><a href="https://www.routard.com/guide/code_dest/jordanie.htm" target="_blank" class="hover:underline flex items-center gap-2"><strong>🗺️ Le Routard Jordanie</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-gray-100 pt-8">
+            <p class="font-serif text-2xl text-template-roche mb-2">Jordanie</p>
+            <p class="text-xs text-gray-400">© 2025 - Roadmap n8n</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Gestion de l'affichage du menu au scroll (Apparition/Disparition)
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // 2. Détection de l'étape active (Surbrillance automatique)
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px', // Active la zone quand elle est au milieu de l'écran
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    
+                    // Mise à jour des liens mobiles
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1); // enlève le #
+                        
+                        if (linkHref === activeId) {
+                            // Style Actif (Ocre + Blanc + Ombre)
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            
+                            // Scroll automatique du menu horizontal pour centrer l'élément actif
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            // Style Inactif (Gris)
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+
+                    // Mise à jour des liens desktop (simple couleur)
+                    document.querySelectorAll('.nav-item-desktop').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (activeId.includes('jour') && linkHref === 'jour-1') {
+                            link.classList.add('text-template-ocre'); // Active "Le Parcours" si on est sur un jour
+                        } else if (activeId === 'pratique' && linkHref === 'pratique') {
+                             link.classList.add('text-template-ocre');
+                        } else {
+                            link.classList.remove('text-template-ocre');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // On observe toutes les sections "jour" et le footer
+        document.querySelectorAll('div[id^="jour-"], footer#pratique').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
