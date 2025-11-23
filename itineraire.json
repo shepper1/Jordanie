@@ -1,0 +1,253 @@
+{
+  "pays": "Jordanie",
+  "drapeau": "🇯🇴",
+  "symbole": "🐪",
+  "titre": "Épopée Jordanienne : Des Trésors de Pétra aux Vastes Étendues du Wadi Rum",
+  "budget": "1800€",
+  "duree": "10 jours",
+  "temps_vol": "Environ 5h",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Amman, la capitale blanche",
+      "legende": "Atterrissage en douceur et première immersion dans l'atmosphère jordanienne avec une balade tranquille dans un quartier moderne pour s'acclimater.",
+      "lieu": "Amman",
+      "activites": [
+        "🛬 Arrivée à l'aéroport Queen Alia (AMM)",
+        "🚖 Transfert et installation à l'hôtel",
+        "🚶‍♂️ Balade et dîner à Jabal Amman (Rainbow Street)"
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "🎫",
+          "titre": "Jordan Pass",
+          "texte": "Achetez le Jordan Pass en ligne avant votre départ. Il inclut le visa et l'accès à plus de 40 sites, dont Pétra."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Plongée dans l'Histoire d'Amman",
+      "legende": "Une journée consacrée à la découverte des joyaux antiques de la capitale, entre la Citadelle qui domine la ville et l'impressionnant Théâtre Romain.",
+      "lieu": "Amman",
+      "activites": [
+        "🏺 Visite de la Citadelle d'Amman (Jabal al-Qal'a)",
+        "🎭 Exploration du Théâtre Romain et de l'Odéon"
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Bon à savoir",
+          "texte": "Les sites sont vastes et en relief. Portez des chaussures de marche confortables."
+        },
+        {
+          "symbole": "😋",
+          "titre": "Pause gourmande",
+          "texte": "Goûtez au Knafeh, un dessert local réputé, chez Habibah Sweets, près du Théâtre Romain."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🗺️",
+      "titre": "Sur les traces des Romains à Jerash",
+      "legende": "Excursion vers le nord pour explorer Jerash, l'une des cités romaines les mieux préservées du monde, un véritable voyage dans le temps.",
+      "lieu": "Jerash",
+      "activites": [
+        "🚗 Trajet d'Amman à Jerash (environ 1h)",
+        "🏛️ Exploration du site archéologique de Jerash (Arc d'Hadrien, Forum, Cardo Maximus)"
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "👨‍🏫",
+          "titre": "Conseil",
+          "texte": "Engagez un guide local à l'entrée du site pour mieux comprendre l'histoire fascinante de la ville."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏞️",
+      "titre": "La Route des Rois et ses panoramas",
+      "legende": "Une journée de route scénique vers le sud, ponctuée d'arrêts culturels et spirituels majeurs comme Madaba et le Mont Nébo.",
+      "lieu": "Route des Rois",
+      "activites": [
+        "⛪ Visite de l'église Saint-Georges de Madaba et sa carte en mosaïque",
+        "🌄 Contemplation du panorama depuis le Mont Nébo",
+        "🏰 Arrêt au château de Kerak (si le temps le permet) et route vers Dana"
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "La Route des Rois offre des points de vue spectaculaires, notamment sur le Wadi Mujib. Prévoyez des arrêts."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🥾",
+      "titre": "Randonnée à Dana et route vers Pétra",
+      "legende": "Découverte matinale des paysages grandioses de la réserve de biosphère de Dana avant de rejoindre Wadi Musa, la porte d'entrée de la mythique Pétra.",
+      "lieu": "Dana / Wadi Musa",
+      "activites": [
+        "⛰️ Courte randonnée dans la réserve de Dana",
+        "🚗 Route vers Wadi Musa et installation à l'hôtel"
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🕯️",
+          "titre": "Petra by Night",
+          "texte": "Si vous arrivez un lundi, mercredi ou jeudi, pensez à réserver le spectacle 'Petra by Night' pour une première approche magique."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🏺",
+      "titre": "Pétra, le trésor Nabatéen",
+      "legende": "Journée inoubliable dédiée à la partie basse de Pétra, de la traversée du Siq à la découverte du célèbre Trésor, icône de la Jordanie.",
+      "lieu": "Pétra",
+      "activites": [
+        "🌄 Descente du Siq et découverte du Trésor (Al-Khazneh)",
+        "🚶‍♂️ Exploration de la rue des Façades, du Théâtre et des Tombeaux Royaux"
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Astuce",
+          "texte": "Commencez votre visite dès l'ouverture du site (6h du matin) pour éviter la foule et la chaleur intense de la mi-journée."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🧗",
+      "titre": "Pétra, vers les hauteurs",
+      "legende": "Ascension vers le Monastère, le joyau caché de Pétra, pour une récompense à couper le souffle et des vues panoramiques sur les montagnes environnantes.",
+      "lieu": "Pétra",
+      "activites": [
+        "💪 Randonnée jusqu'au Monastère (Ad-Deir)",
+        "🧭 Exploration libre des sentiers moins fréquentés, comme le Haut-Lieu du Sacrifice"
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Indispensable",
+          "texte": "Prévoyez au moins 3 litres d'eau par personne, un chapeau, de la crème solaire et de bonnes chaussures pour cette journée exigeante."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏜️",
+      "titre": "Aventure dans le désert du Wadi Rum",
+      "legende": "Immersion dans les paysages martiens du Wadi Rum à bord d'un 4x4 bédouin, conclue par un coucher de soleil et une nuit sous les étoiles.",
+      "lieu": "Wadi Rum",
+      "activites": [
+        "🚗 Route de Pétra au Wadi Rum (environ 1h30)",
+        "🚙 Excursion en 4x4 pour découvrir les sites majeurs du désert",
+        "🏕️ Dîner et nuit dans un camp bédouin"
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🧣",
+          "titre": "Équipement",
+          "texte": "Même si les journées sont chaudes, les nuits dans le désert peuvent être très fraîches. Prévoyez des vêtements chauds."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🌊",
+      "titre": "Flottaison sur la Mer Morte",
+      "legende": "Expérience unique au point le plus bas de la Terre : flotter sans effort dans les eaux sur-salées de la Mer Morte et s'enduire de sa boue bienfaisante.",
+      "lieu": "Mer Morte",
+      "activites": [
+        "🚗 Route du Wadi Rum à la Mer Morte (environ 4h)",
+        "🏊 Flottaison dans la Mer Morte et bain de boue"
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "❗️",
+          "titre": "Attention",
+          "texte": "Évitez de vous raser la veille et ne mettez surtout pas la tête sous l'eau. La sensation de l'eau salée dans les yeux est très douloureuse."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛫",
+      "titre": "Derniers instants et départ",
+      "legende": "Profitez d'une dernière matinée de détente au bord de la Mer Morte avant de prendre la route pour l'aéroport, des souvenirs inoubliables en mémoire.",
+      "lieu": "Mer Morte / Aéroport d'Amman",
+      "activites": [
+        "⛱️ Matinée de détente au bord de la Mer Morte",
+        "🚗 Transfert vers l'aéroport Queen Alia (AMM) pour le vol retour"
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Les produits cosmétiques de la Mer Morte (sels, boue) sont d'excellents souvenirs à rapporter."
+        }
+      ]
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont le printemps (mars à mai) et l'automne (septembre à novembre).",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Prévoir des vêtements légers pour la journée et des couches plus chaudes pour les soirées et le désert. Tenue correcte exigée pour les sites religieux.",
+      "symbole": "👕"
+    },
+    {
+      "titre": "La monnaie est le Dinar Jordanien (JOD). Les cartes de crédit sont acceptées dans les hôtels et grands restaurants, mais prévoyez du liquide.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Permis de conduire international recommandé pour louer une voiture. Conduite à droite. Soyez vigilant au style de conduite local.",
+      "symbole": "🚗"
+    },
+    {
+      "titre": "Achetez une carte SIM locale (Zain, Orange) à l'aéroport pour un accès facile à internet et au GPS durant votre séjour.",
+      "symbole": "📶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Site officiel du tourisme",
+      "titre": "Visit Jordan",
+      "url": "https://www.visitjordan.com/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Informations et achat",
+      "titre": "Jordan Pass",
+      "url": "https://www.jordanpass.jo/",
+      "symbole": "🎫"
+    },
+    {
+      "legende": "Conseils aux voyageurs",
+      "titre": "France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/",
+      "symbole": "⚠️"
+    }
+  ]
+}
