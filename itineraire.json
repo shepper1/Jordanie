@@ -1,0 +1,251 @@
+{
+  "pays": "Jordanie",
+  "drapeau": "🇯🇴",
+  "symbole": "🐪",
+  "titre": "Aventure au cœur des trésors bédouins",
+  "budget": "1800€",
+  "duree": "10 jours",
+  "temps_vol": "4h30",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Amman",
+      "legende": "Arrivée en douceur dans la capitale jordanienne. Première immersion dans l'ambiance animée de la ville, entre modernité et traditions.",
+      "lieu": "Amman",
+      "activites": [
+        "🛬 Arrivée à l'aéroport Queen Alia",
+        "🛏️ Installation à l'hôtel",
+        "🚶‍♂️ Balade sur Rainbow Street"
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "🚕",
+          "titre": "Transport",
+          "texte": "Privilégiez les taxis officiels jaunes ou utilisez les applications Uber/Careem pour éviter les mauvaises surprises à l'aéroport."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Voyage dans le temps",
+      "legende": "Explorez l'une des cités romaines les mieux conservées du monde avant de plonger dans l'histoire antique d'Amman.",
+      "lieu": "Jerash / Amman",
+      "activites": [
+        "🚗 Excursion à Jerash, la 'Pompéi de l'Est'",
+        "🎭 Visite de la citadelle et du théâtre romain d'Amman"
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Conseil Visite",
+          "texte": "Visitez Jerash le matin pour éviter les fortes chaleurs de l'après-midi. Prévoyez de l'eau et un chapeau."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🛣️",
+      "titre": "Route des Rois et Mer Morte",
+      "legende": "Un trajet panoramique à travers l'histoire biblique vous mènera jusqu'au point le plus bas de la Terre pour une expérience de flottaison inoubliable.",
+      "lieu": "Route des Rois / Mer Morte",
+      "activites": [
+        "🗺️ Route via Madaba (mosaïques) et le Mont Nébo",
+        "🌊 Arrivée et baignade dans la Mer Morte"
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Mer Morte",
+          "texte": "Ne vous rasez pas juste avant la baignade et évitez tout contact de l'eau avec les yeux, la sensation de brûlure est intense !"
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏞️",
+      "titre": "Canyons et châteaux",
+      "legende": "Découvrez les paysages spectaculaires de la plus grande réserve naturelle de Jordanie avant de faire un saut à l'époque des Croisades.",
+      "lieu": "Dana / Petra",
+      "activites": [
+        "🚶‍♀️ Randonnée dans la réserve de biosphère de Dana",
+        "🏰 Visite du château croisé de Shobak en route vers Petra"
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🥾",
+          "titre": "Randonnée",
+          "texte": "Plusieurs sentiers sont disponibles à Dana, du plus facile au plus exigeant. Renseignez-vous au centre des visiteurs."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🏺",
+      "titre": "Petra, la merveille cachée",
+      "legende": "Première journée d'exploration de la mythique cité Nabatéenne, en commençant par son approche la plus célèbre et son monument iconique.",
+      "lieu": "Petra (Wadi Musa)",
+      "activites": [
+        "🏜️ Traversée du Siq jusqu'au Trésor (Al-Khazneh)",
+        "🏛️ Exploration de la rue des Façades et du Théâtre"
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🎟️",
+          "titre": "Jordan Pass",
+          "texte": "Achetez le Jordan Pass en ligne avant votre départ. Il inclut le visa et l'accès à plus de 40 sites, dont Petra, ce qui est très rentable."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🧗",
+      "titre": "Petra, vue d'en haut",
+      "legende": "Prenez de la hauteur pour découvrir un autre joyau de Petra et profitez d'une vue imprenable sur les montagnes environnantes.",
+      "lieu": "Petra (Wadi Musa)",
+      "activites": [
+        "🚶‍♂️ Ascension jusqu'au Monastère (Ad-Deir)",
+        "✨ En soirée, spectacle féérique 'Petra by Night'"
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Équipement",
+          "texte": "De bonnes chaussures de marche sont indispensables. La montée au Monastère compte environ 800 marches."
+        },
+        {
+          "symbole": "💡",
+          "titre": "Petra by Night",
+          "texte": "Le spectacle n'a lieu que les lundis, mercredis et jeudis. Vérifiez le calendrier et achetez vos billets sur place à l'avance."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏜️",
+      "titre": "Le désert de Wadi Rum",
+      "legende": "Plongez dans les paysages martiens du désert de Lawrence d'Arabie pour une aventure en 4x4 et une nuit magique sous les étoiles.",
+      "lieu": "Wadi Rum",
+      "activites": [
+        "🚙 Excursion en 4x4 dans le désert",
+        "🌌 Nuit dans un camp bédouin"
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🧣",
+          "titre": "Climat du désert",
+          "texte": "Les nuits peuvent être très froides dans le désert, même après une journée chaude. Prévoyez des vêtements chauds."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🌊",
+      "titre": "Du désert à la Mer Rouge",
+      "legende": "Quittez le sable rouge pour les eaux cristallines de la Mer Rouge et découvrez les trésors sous-marins d'Aqaba.",
+      "lieu": "Wadi Rum / Aqaba",
+      "activites": [
+        "🌅 Lever de soleil sur le Wadi Rum et route vers Aqaba",
+        "🐠 Snorkeling ou plongée dans les récifs coralliens"
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🐠",
+          "titre": "Fonds marins",
+          "texte": "Les récifs coralliens d'Aqaba sont facilement accessibles depuis la plage (South Beach). Parfait pour tous les niveaux."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🚗",
+      "titre": "Détente et retour vers la capitale",
+      "legende": "Profitez d'une dernière matinée au bord de la mer avant de prendre la route du retour vers Amman.",
+      "lieu": "Aqaba / Amman",
+      "activites": [
+        "🛍️ Matinée libre à Aqaba pour détente ou shopping",
+        "🛣️ Trajet de retour vers Amman (environ 4h)"
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "⛽",
+          "titre": "Trajet",
+          "texte": "L'Autoroute du Désert (Desert Highway) est le moyen le plus rapide pour relier Aqaba à Amman. Faites le plein avant de partir."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛫",
+      "titre": "Départ d'Amman",
+      "legende": "Un dernier petit-déjeuner jordanien avant de vous diriger vers l'aéroport, des souvenirs inoubliables en tête.",
+      "lieu": "Amman",
+      "activites": [
+        "☕ Dernier petit-déjeuner",
+        "🛫 Transfert à l'aéroport et vol retour"
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Pensez à acheter des dattes Medjool ou des épices locales avant de partir, ce sont d'excellents souvenirs à rapporter."
+        }
+      ]
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont le printemps (mars à mai) et l'automne (septembre à novembre).",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Au printemps/automne, températures agréables (15-28°C). Prévoir un vêtement chaud pour les soirées dans le désert.",
+      "symbole": "🌡️"
+    },
+    {
+      "titre": "Monnaie : Dinar jordanien (JOD). Prévoir du liquide, surtout pour les petits commerces et les souks.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Location de voiture aisée (permis français suffisant). Conduite à droite. État des routes globalement bon.",
+      "symbole": "🚗"
+    },
+    {
+      "titre": "Acheter une carte SIM locale (Zain, Orange) à l'arrivée est économique et pratique pour avoir internet.",
+      "symbole": "📶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations touristiques officielles",
+      "titre": "Visit Jordan",
+      "url": "https://www.visitjordan.com/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Visa et entrée sur le territoire",
+      "titre": "Jordan Pass",
+      "url": "https://www.jordanpass.jo/",
+      "symbole": "🛂"
+    },
+    {
+      "legende": "Conseils aux voyageurs",
+      "titre": "France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/jordanie/",
+      "symbole": "⚠️"
+    }
+  ]
+}
